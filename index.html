@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Steinmetz Imre</title>
+  <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
+</head>
+  <style type="text/css">
+    html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+    @font-face {
+        font-family: "DINPro-Regular";
+        src: url("https://db.onlinewebfonts.com/t/c9c60c88cb732119e5a9457f2d9cdc53.eot"); /* IE9*/
+        src: url("https://db.onlinewebfonts.com/t/c9c60c88cb732119e5a9457f2d9cdc53.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("https://db.onlinewebfonts.com/t/c9c60c88cb732119e5a9457f2d9cdc53.woff2") format("woff2"), /* chrome firefox */
+        url("https://db.onlinewebfonts.com/t/c9c60c88cb732119e5a9457f2d9cdc53.woff") format("woff"), /* chrome firefox */
+        url("https://db.onlinewebfonts.com/t/c9c60c88cb732119e5a9457f2d9cdc53.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+        url("https://db.onlinewebfonts.com/t/c9c60c88cb732119e5a9457f2d9cdc53.svg#DINPro-Regular") format("svg"); /* iOS 4.1- */
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      width:100%;
+      font-family: 'DINPro-Regular', 'Trebuchet MS';
+    }
+    header {
+      background-color: #3b444d;
+      z-index: 2;
+    }
+    h1 {
+      display:inline-block;
+      font-size: 37px;
+      color: white;
+      text-align: left;
+      float: left;
+    }
+    #button {
+      display: inline-block;
+      padding-right: 4vw;
+      cursor: pointer;
+      float: right;
+      color: white;
+      font-weight: bold;
+    }
+    h2 {
+      padding-top: 200px;
+      padding-bottom: 100px;
+      text-align: center;
+      font-size: 80px;
+font-family: 'Lemon/Milk', sans-serif;
+      color: #3b444d;
+      font-weight: bold;
+    }
+    footer {
+      background: url("https://i.imgur.com/UTRjndK.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding-top: 5vw;
+      padding-left: 4vw;
+      
+    }
+    .img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      z-index: -1;
+      overflow: hidden;
+      position: relative;
+      display: block;
+      position:relative;
+      z-index: -2;  
+    }
+    p {
+      line-height: 66px;
+      text-align: justify;
+    }
+    .logo {
+      width: 450px;
+      padding-left: 50px;
+      float: left;
+    }
+    p, h5, h6 {
+      font-size: 40px;
+    }
+    h4 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .back {
+      background: url("https://i.imgur.com/qXJQGJ3.jpeg");
+      background-color: white;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      color: #171b1e;
+      padding-bottom: 100px;
+      z-index: -2;
+    }
+    h5 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    h3 {
+      font-size: 50px;
+      padding-top: 90px;
+      padding-bottom: 40px;
+      line-height: 70px;
+      font-family: 'Lemon/Milk', sans-serif;
+      font-weight: bold;
+    }
+    #button {
+      font-size: 60px;
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+    .scroll {
+      text-align:right;
+      padding-right: 50px;
+      column-rule: white;
+      text-decoration: none;
+      font-size: 40px;
+      display: block;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-bottom: solid 1px grey;
+    }
+    .scroll, .scroll:visited, .scroll:hover, .scroll:active {
+      color: white;
+    }
+    .scroll:hover {
+      background-color: #626970;
+    }
+    .sec {
+      padding-bottom: 150px;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      background: url("https://i.imgur.com/qXJQGJ3.jpeg");
+    }
+    .end {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+    }
+    .head {
+      background-color: #3b444d;
+      width: 100%;
+      height: 200px;
+      padding-bottom: 10px;
+      padding-top: 0px;
+      border-bottom: solid 1px black;
+      background: linear-gradient(to bottom, #171b1e 0%, #3b444d 100%);
+      position: fixed;
+      z-index: 2;
+    }
+    .scroll:hover {
+      font-weight: bold;
+    }
+    h6 {
+      margin-left: 50px;
+    }
+    .hamburger {
+      border-bottom: solid 5px white;
+      float: right;
+      width: 40px;
+      margin-right: 4vw;
+      float: right;
+    }
+    #lines {
+      padding-top: 50px;
+      cursor: pointer;
+      float: right;
+    }
+    .list {
+      width: 100%;
+      min-width: 400px;
+      position: absolute;
+      z-index: 1;
+      margin-top: 210px;
+    }
+    .inner {
+      text-align: center;
+      width: 30%;
+      min-width: 400px;
+      float: right;
+      background-color: #3b444d;
+    }
+    @media (max-width: 1458px) {
+      h1 {
+      font-size: 20px;
+    }
+      .head {
+        height: 100px;
+      }
+    h2 {
+      padding-top: 100px;
+      padding-bottom: 50px;
+      font-size: 30px;
+    }
+    p {
+      line-height: 30px;
+      text-align: justify;
+    }
+    .logo {
+      width: 230px;
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+    p, h5, h6 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    h5 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    h3, #button {
+      font-size: 20px;
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
+    .scroll {
+      padding-right: 20px;
+      font-size: 30px;
+      padding-bottom: 22px;
+      padding-top: 22px;
+      text-align: center;
+    }
+    .sec {
+      padding-bottom: 150px;
+    }
+    .end {
+      font-size: 15px;
+      line-height: 25px;
+      text-align: left;
+    } 
+    h6 {
+      margin-left: 30px;
+    }
+    .head{
+      padding-bottom: 0px;
+    }
+    .sec {
+        padding-bottom: 90px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+      }
+    #lines {
+      padding-top: 20px;
+      cursor: pointer;
+    }
+    .hamburger {
+      border-bottom: solid 4px white;
+      float: right;
+      width: 30px;
+      margin-right: 4vw;
+      float: right;
+    }
+    .list {
+      width: 100%;
+      min-width: 0px;
+      position: relative;
+      background-color: #3b444d;
+      margin-top: 0px;
+      padding-top: 110px;
+    }
+      .inner {
+      min-width: 0px;
+      text-align: center;
+      width: 100%;
+    }
+    #button {
+      font-size: 40px;
+      padding-top: 20px;
+    }
+      header {
+        display: block;
+      }
+  </style>
+<body id="body">
+<header id="callout" data-closable><div class="head"><a href="#body">
+  <img class="logo" src="https://i.imgur.com/Z4JxrNs.png"></a>
+    <span onclick="myFunction()" id="button">&times;</span>
+  <div id="lines" onclick="myFunction2()">  
+  <div class="hamburger"></div>
+    <br>
+    <div class="hamburger"></div>
+    <br>
+    <div class="hamburger"></div></div></div></header>
+  <div class="list" id ="myDIV"><div class="inner">
+    <a href="#int" class="scroll">Bemutatkozás</a>
+    <a href="#future" class="scroll">Jövőkép</a>
+    <a href="#story" class="scroll">Történetünk</a>
+    <a href="#dr" class="scroll">Dr. Steinmetz Imre</a>
+    <a href="#methods" class="scroll">Módszereink</a>
+    <a href="#log" class="scroll">Belépés</a>
+    <a href="#sponsor" class="scroll">Támogatások</a>
+    <a href="#RIK" class="scroll">RIK Kiadó</a>
+    <a href="#donate" class="scroll">Adományok</a>
+    <a href="#SIRIK" class="scroll">SIRIK-fon</a></div></div>
+  <img class="img" id="int" src="https://i.imgur.com/qzIWcrU.jpeg">
+  <div class="back">
+  <h2>Bemutatkozás</h2>
+    <p><span style="font-weight:bold;">A Steinmetz Imre Rehabilitációs és Integrációs Központ</span>, a közép-európai régió elsőként megnyíló, <span style="font-weight:bold;">felnőttek számára</span> kialakított <span style="font-weight:bold;">integrációs intézménye 2029-ben</span> kezdte meg tevékenységét és immár öt éve működteti az országban és a régióban egyaránt egyedülálló programját. <span style="font-weight:bold;">Ingyenes, önkéntes</span> alapon igénybe vehető, közcélú programjának lényege, hogy felkészítse képzést elvégzőket a <span style="font-weight:bold;">stabil családi környezet kialakítására</span>, segítse őket a <span style="font-weight:bold;">harmonikus közösségi működéshez</span> szükséges szerepek elsajátításában és eszközöket adjon nekik ahhoz, hogy megtalálják helyüket társadalmunkban és konstruktívan járuljanak hozzá annak működéséhez. A Központ tárt kapukkal várja a <span style="font-weight:bold;">Kárpát-medence teljes területéről érkezőket</span>, és nyújt segítséget mindenkinek válogatás nélkül.<br><br>
+A Steinmetz Imre Rehabilitációs és Integrációs Központ <span style="font-weight:bold;">tudásközpont</span>ként is működik: az intézet alapítója, <span style="font-weight:bold;">Dr. Steinmetz Imre által kidolgozott módszer</span> hatásmechanizmusát és eredményességét folyamatosan kutatja és kvantifikálja, hatását különböző személyiségtípusok és közösségek esetében vizsgálja és fejleszti tovább. Az <span style="font-weight:bold;">intézet könyvkiadója</span> egyaránt jelentet meg népszerű, a módszer alapjait és eredményeit ismertető műveket az érdeklődő laikusok számára és publikálja a módszertanba részletesebb szakmai betekintést nyújtó tudományos munkákat.
+</p>
+  </div><img class="img" id="future" src="https://i.imgur.com/GDipM6Y.jpeg">
+  <div class="back">
+    
+    <h2>Jövőkép</h2>
+    <p>A <span style="font-weight:bold;">Steinmetz Imre Rehabilitációs és Integrációs Központ</span> (SIRIK) fél évtizede foglalkozik a <span style="font-weight:bold;">teljes társadalmat érintő integrációs problémák orvosolásával</span>. A segítségre szorulók támogatása és számukra az új életlehetőségek megnyitása a nemzet alapvető érdeke és közös kötelességünk.<br><br>
+A Központ és annak tagintézményei a 1253/2027. évi Kormányrendelet alapján évente progresszíven <span style="font-weight:bold;">növekedő támogatásban részesülnek a központi költségvetésből</span>, melynek segítségével egyre bővülő kapacitással és magas szakmai minőségben tudják folytatni tevékenységüket, ami az egész kárpát-medencei magyarság javát szolgálja.
+A SIRIK működése és missziója független és jól elkülöníthető mind a közoktatási, mind az egyéb céllal működő korrekciós intézményektől – a programon történő <span style="font-weight:bold;">részvétel önkéntes és egyéni elköteleződésen alapul</span>, a képzés ötvözi a hagyományos edukációs, <span style="font-weight:bold;">egyéni és csoportos módszereket</span> a képességek és ismeretek minél átfogóbb és hatékonyabb fejlesztése érdekében.
+      2034-ben – a fővárosban működő, nagykorú résztvevőket fogadó Központ mellett – az ország teljes területén <span style="font-weight:bold;">hét testvérintézmény</span> foglalkozik <span style="font-weight:bold;">fiatalok és kiskorúak számára történő segítségnyújtással</span>. A 2035-2040-es költségvetési tervben további 3 felnőttképzési és 10, fiatalok és kiskorúak számára elérhető központ nyitása szerepel, melyek segítségével földrajzilag is közelebb kerül a segítség azokhoz, akiknek erre szüksége van, illetve a határon túli közösségek számára is közvetlenül elérhetővé válik a képzés. 2040-re a SIRIK és a kapcsolódó intézetek fogják alkotni a <span style="font-weight:bold;">legkiterjedtebb földrajzi lefedettséggel működő rehabilitációs intézményhálózatot</span> a régióban, az összmagyarság jólétének és boldogulásának szolgálatában.
+    </p></div><img class="img" id="story" src="https://i.imgur.com/ybeSbfE.jpeg"><div class="back">
+  
+    <h2>Történetünk</h2>
+    <h3>Bevezető</h3>
+  <p>A <span style="font-weight:bold;">SIRIK</span>, Magyarország legnagyobb kapacitású integrációs központja <span style="font-weight:bold;">2029-ben az Emberi erőforrások minisztériumának felkérésre jött létre</span>. Ebben az évben ért az <span style="font-weight:bold;">ország a nemzeti szuverenitás</span> visszaállításának utolsó szakaszához, és <span style="font-weight:bold;">teljes függetlenségének kivívásával párhuzamosan</span> vált egyre erősebbé az a társadalmi igény, hogy a <span style="font-weight:bold;">kormányzat központilag megszervezett támogatást</span> nyújtson azoknak, akik segítségre szorulnak identitásuk megszilárdításában és támogassa őket abban, hogy megtalálják a helyüket a közösen létrehozott új rendben.<br><br>
+A magyar választópolgárok 2027. áprilisában szavaztak az Európai Unióból történő kilépésről és tették tanúbizonyságát annak, hogy a magyar népszabadság–, és békeszerető nép, és az ezt megelőző konzultációk során szolidaritásukról és együttérzésükről biztosították azokat, akik nehézségekkel küzdenek magyar identitásuk megélésében. <span style="font-weight:bold;">A magyar nemzet úgy döntött, segítő kezet nyújt</span> azoknak, akiknek szükségük van rá, és <span style="font-weight:bold;">szervezett formában integrálja a közösségbe azokat</span>, akik saját akaratukból szeretnének ezért erőfeszítéseket tenni, de a <span style="font-weight:bold;">beilleszkedés önhibájukon kívül meghaladja lehetőségeiket.</span><br><br>
+A teljes nemzeti szuverenitásért zajló küzdelem éveit lezáró közös jelmondat – <span style="font-weight:bold;">Együtt harcoltunk a békéért, és együtt értük el, amit akartunk. Magyarország mostantól A béke szigete</span> – inspirálta az intézet alapítóját, Dr. Steinmetz Imrét azoknak az átalakításoknak a megvalósításában, melyek segítségével az 1990-es évek óta formálódó, a magyar társadalmi igényekhez egyedien alkalmazkodó módszerét felnőttek számára elérhetővé tette.</p>
+    <h3>Előkészületek - az első húsz év</h3>
+    <p>Az SIRIK létrejöttének története összefonódik az intézményalapító, Dr. Steinmetz Imre életével és munkásságával. <span style="font-weight:bold;">Dr. Steinmetz Imre az 1990-es évek elején kezdte el saját, egyedi megközelítésú módszerének kidolgozását</span>. Dr. Steinmetz pályája elején korán felismerte, hogy a rendszerváltást követően kialakult sajátos társadalmi és gazdasági struktúrák, és az általuk kitermelt egyéni élethelyzetek és problémakörök olyan választ igényelnek, melyekhez az akkori Magyarországon a pszichiátriai kezelésben és pszichoterápiás gyakorlatban <span style="font-weight:bold;">széles körben alkalmazott módszerek felülvizsgálata és átalakítása szükséges</span>. Dr. Steinmetz először az egri pszichiátrián, majd a balassagyarmati börtönben dolgozta ki annak az alapvetően <span style="font-weight:bold;">kiscsoportos, kognitív-nyelvi megközelítésen alapuló módszer</span>nek az alapjait, melyet ma a SIRIK alkalmaz.</p>
+    <h3>Az intézményi működés kezdeti évei</h3>
+    <p>A <span style="font-weight:bold;">SIRIK előképe a Dr. Steinmetz Imre által létrehozott gyermekvédelmi intézményhálózat</span>, melynek <span style="font-weight:bold;">első tagintézete 2019-ben</span> nyitotta meg kapuit az előzetes válogatáson átesett, állami gondozásban lévő gyermekek előtt. A nagybajomi intézet megnyitását követően az Emberi erőforrások minisztériumának felkérésére Dr. Steinmetz Imre hozzálátott további hat, hasonló intézmény kialakításához, és az <span style="font-weight:bold;">intézményi munka eredményességét, formabontó jellege mellett hiánypótló voltát</span> igazolta az is, hogy a kormányzat évről évre növekvő összeget határolt el a költségvetésből az intézmények működésének támogatására.<br><br>
+      Az újabb fordulópontot a <span style="font-weight:bold;">2025</span>-ös év hozta, amikortól kezdve a <span style="font-weight:bold;">fiatalkorúak számára</span> létrehozott intézményekbe megnyílt <span style="font-weight:bold;">az önkéntes jelentkezés lehetősége</span> is, így a gyermekvédelmi rendszeren kívülről érkező, támogatást igénylő fiatalok is felvételt nyerhettek a bentlakásos intézetekbe.<br><br>
+Az intézetkomplexum az ezt követő évben <span style="font-weight:bold;">bővítette tevékenységét könyvkiadással</span>, melynek eredményeképpen az addig is tudásközpontként működő intézet kutatási eredményei és módszertani leírásai elérhetővé váltak az érdeklődő szakmai és laikus olvasóközönség számára is.<br><br>
+Az intézeti tevékenység folyamatos bővítésének jegyében vált <span style="font-weight:bold;">akkreditált képzéssé az ápolók számára kialakított belső oktatási program</span>, melynek során a bentlakók az integrációs terápia végeztével hivatalosan elismert képesítést szerezhetnek és dolgozhatnak tovább ápolóként az intézethálózatban. A képzési programot Dr. Steinmetz Imre azzal a céllal hívta életre, hogy az egyre bővülő beteganyagot a <span style="font-weight:bold;">leginkább szakavatott kezek láthassák el</span>, azok, akik saját tapasztalatot szereztek a <span style="font-weight:bold;">képzés integráló és komplex átformáló hatásával kapcsolatban.</span>
+</p>
+    <h3>Nemzeti Rehabilitációs és Integrációs Központ</h3>
+  <p><span style="font-weight:bold;">2028-ban</span> az intézethálózat fejlődése hatalmas mérföldkőhöz érkezett. <span style="font-weight:bold;">Magyarország kormánya</span> a Karmelita kolostor külföldről pénzelt, anarchista illegális szervezetek által szervezett ostromát követően, az ismétlődő közösségellenes magatartásra reagálva gyorsította meg a már korábban megkezdett előkészületeket egy <span style="font-weight:bold;">felnőtt integrációs központ létrehozására</span>. A kétes hírnevű és addigra az országot már végleg elhagyó, végrehajtás alatt álló Central European University és később annak épületegyüttesét használó <span style="font-weight:bold;">nemzetellenes közösségek</span> a 657/2026. Kormányrendelet alapján <span style="font-weight:bold;">2027. januárjában végleg elhagyták a Nádor utcai épületet</span> – melyben rövid átalakítási munkálatokat követően, 2029. május 9-én kezdte meg működését a <span style="font-weight:bold;">Nemzeti Rehabilitációs és Integrációs Központ Dr. Steinmetz Imre vezetésével.</span><br><br>
+ <span style="font-weight:bold;">“A nemzeti identitás intenzív megélése minden magyar állampolgártól elvárható, az ezt elősegítő terápia igénybevétele önkéntes alapon történik, míg a megfelelő támogatás a teljes nemzet felelőssége.”</span> – ezekkel a szavakkal nyitotta meg az <span style="font-weight:bold;">Emberi erőforrások Minisztere</span> az intézményt, és Dr. Steinmetz Imre ebben a szellemiségben vezette az intézetet 2033. novemberében bekövetkezett haláláig. 2033. decemberében az intézet vezetését <span style="font-weight:bold;">Dr. Steinmetz korábbi helyettese, Dr. Fehér Endre</span> vette át és az intézet neve <span style="font-weight:bold;">2034. januárjától Steinmetz Imre Rehabilitációs és Integrációs Központra</span> változott.</p>
+    <h3>Az út előre visz</h3>
+    <p>A 2034-es évben az intézet minden eddiginél több bentlakóval folytatja tovább működését, mivel felújítási munkálatok befejeztével immár <span style="font-weight:bold;">300 főt tud fogadni és intenzív képzésben részesíteni</span>. Ebben az évben fogja az Emberi Erőforrások Minisztériumának Kuratóriuma először odaítélni a Steinmetz Imre <span style="font-weight:bold;">Díj</span>at, melyben olyan személyek részesülhetnek, akik az <span style="font-weight:bold;">oktatás és nevelés területén kiemelkedő, a nemzet fejlődését szolgáló, rendkívüli és áldozatos munkát</span> végeznek.</p>
+    </div><img class="img" id="dr" src="https://i.imgur.com/ZKTcoI5.jpeg"><div class="back">
+  <h2>Dr. Steinmetz Imre</h2>
+  <p>A <span style="font-weight:bold;">SIRIK</span> az összmagyarság érdekei szolgálatában tevékenykedő, független intézmény, <span style="font-weight:bold;">a magyarországi integrációs erőfeszítések zászlóshajója</span>. A Központ alapítója, a szakmai közösség létrehozója és a SIRIK-ben alkalmazott hiánypótló és formabontó módszer kidolgozója <span style="font-weight:bold;">Prof. Dr. Steinmetz Imre, Akadémiai Aranyéremmel kitüntetett pszichiáter, pszichoterapeuta, kutató, közösségépítő.</span> </p>
+    <h3>Élete és munkássága</h3>
+  <p>Dr. Steinmetz Imre <span style="font-weight:bold;">Pásztón született 1962</span>-ben, általános iskolai tanulmányait szülőfalujában végezte, és a gyöngyösi Berze Nagy János Gimnáziumban szerzett kitűnő érettségi után 1981-ben kezdte meg tanulmányait a Semmelweis Orvostudományi Egyetemen. Az ifjú Steinmetz Imre a korai évektől kezdve elköteleződött a <span style="font-weight:bold;">közösségi segítségnyújtás</span> mellett, és figyelme a kezdetektől azokra irányult, akiknek a legjobban volt szükségük volt a támogatásra, az elesettek, a kiszolgáltatottak mellett állt ki és nyújtott nekik segítő kezet. <span style="font-weight:bold;">Pszichiátriai és integrációs kutatásait már egyetemi évei alatt megkezdte</span>, és a Péterfy Sándor Utcai Kórházban töltött rezidens évek után az <span style="font-weight:bold;">egri pszichiátria orvosaként, később főorvosaként tevékenykedett egészen 2003-ig.</span><br><br>
+Főorvosként lehetősége volt arra, hogy az <span style="font-weight:bold;">egri kórházban elkezdje kidolgozni egyedi megközelítésű, kognitív alapú módszerét</span>, melynek alapvetése, hogy a terápia során kiemelt figyelmet szükséges fektetni a beteg asszociációs mezőinek, <span style="font-weight:bold;">fogalmi készletének helyes irányban történő újradefiniálására</span>. Dr. Steinmetz módszere hazai szakmai körökben forradalminak számított, és már a kilencvenes évek közepén megfogalmazta azt az alapvetését, miszerint nemcsak a tradicionális egyéni és a széles körben elfogadott csoportterápiák, hanem az ú<span style="font-weight:bold;">jonnan, általa kialakított művészetterápia</span> is elengedhetetlen része a felépülésnek; illetve a minél hamarabbi és hosszan tartó viselkedésbeli változások eléréséhez a <span style="font-weight:bold;">direkt és egyértelmű visszajelzések is kulcsfontosságúak.</span><br><br>
+Korán felismerte, hogy az <span style="font-weight:bold;">egyén szociális környezetének rendezése</span>, a <span style="font-weight:bold;">megfelelő partner megtalálásának</span> facilitálása és a <span style="font-weight:bold;">közösségbe történő integráció</span> olyan megközelítést igényel, ami <span style="font-weight:bold;">egyaránt veszi figyelembe a páciens személyiségéből fakadó irányokat és a társadalom által kínált, támogatott szereplehetőségeket.</span><br><br>
+Dr. Steinmetz Imre az egri évektől kezdve <span style="font-weight:bold;">folyamatosan dokumentálta és kvantifikálta az elért eredményeket</span>, és bár a pszichoterápiás módszerek hatékonysága nehezen számszerűsíthető, az intézetbe történő visszakerülések aránya és a <span style="font-weight:bold;">betegutak követése</span> egyértelművé tette, hogy a <span style="font-weight:bold;">módszer fejlesztése a megfelelő irányba halad.</span><br><br>
+Dr. Steinmetz Imre a pszichiátrián végzett munkája és <span style="font-weight:bold;">kutatásai mellett klinikai pszichológusi képesítést</span> is szerzett, és ezekben az években ismerkedett meg későbbi feleségével, Bánfalvi Máriával, akivel 1995-ben házasodtak össze és <span style="font-weight:bold;">három gyermekük született</span>. A házastársak a korai évektől kezdve kutatótársakként és szakmai partnerként működtek együtt.<br><br>
+Az <span style="font-weight:bold;">úttörő szellemiségű és Magyarországon hiánypótló jellegű integrációs módszer</span> a hazai szakmai közeg számára még a 2000-es években is újszerűnek és szokatlannak számított. A pszichiátriai, illetve pszichológiai területen dolgozó szakemberek többsége a rendszerváltást követően nem lépett túl a kanonizált mesterek követésén és a nyugaton alkalmazott terápiás módszerek utánzásán, annak ellenére, hogy az értő szem számára egyértelmű volt, hogy a <span style="font-weight:bold;">magyar kulturális és társadalmi viszonyok egyedi, saját, és nemzeti karakterológiánkhoz illeszkedő megközelítést igényelnek.</span><br><br>
+Dr. Steinmetz Imre az egri pszichiátriai osztály vezetőjéként az évek múlásával egyre tisztábban érzékelte ezt és a betegek társas viszonyait vizsgáló kutatásai azt igazolták, hogy az általa alkalmazott módszer <span style="font-weight:bold;">nemcsak a kórházi betegek, de a velük kapcsolatban álló, egészséges egyének életében is pozitív irányú változást tud hozni, ezáltal kiterjeszti a terápia hatáskörét.</span><br><br>
+<span style="font-weight:bold;">Társadalomjobbító szándéktól vezérelve kezdte meg tevékenységét a balassagyarmati börtönben 2003-ban</span>, ahol azt remélte, hogy pszichológusként olyan egyének életében hozhat gyökeres változást, akikről a társadalom már lemondott, és akik ezáltal félig-meddig már önmagukról mondtak le. A módszer alkalmazását folyamatosan dokumentálva, eredményeit hazai és nemzetközi szakmai fórumokon publikálva került megerősítésre az a következtetése, hogy a <span style="font-weight:bold;">módszer olyan egyéneknél is</span> gyógyulást, <span style="font-weight:bold;">életjobbulást hoz</span>, akik a hivatalos regiszter szerint <span style="font-weight:bold;">nem küzdenek pszichiátriai betegséggel.</span><br><br>
+A Mester legendás elkötelezettsége és <span style="font-weight:bold;">európai viszonylatban is kiemelkedő eredményei</span> szakmai körökben és azokon kívül is <span style="font-weight:bold;">elismerést hoztak, Dr. Steinmetz Imre 2011-től lett a Magyar Tudományos Akadémia Pszichológiai Tudományos Bizottságának elnöke. 2012-ben Dr. Steinmetzet</span> az Emberi erőforrások minisztériumának <span style="font-weight:bold;">egészségügyért felelős államtitkársága tanácsadói munkára kérte fel</span> és 2019-ben hoztak eredményt az önálló intézmény létrehozására irányuló, addigra már évtizedeken át tartó erőfeszítései. Ebben az évben nyerte meg a nagybajomi Igmándy Kúria felújítására és átalakítására szóló pályázatot. A munkálatok befejeztével <span style="font-weight:bold;">2019 decemberében</span> kezdte el működtetni itt <span style="font-weight:bold;">első önálló intézményét</span>. Az intézményben <span style="font-weight:bold;">gyermekek és fiatalok rehabilitációja</span> kezdődött meg, Dr. Steinmetz személyesen járta be az ország gyermekotthonait és adott itt menedéket azoknak a gyerekeknek, akiknek leginkább szükségük volt rá.<br><br>
+    Az intézményben <span style="font-weight:bold;">rehabilitált nagykorúvá váló fiataloknak</span> Dr. Steinmetz megadta a lehetőséget, hogy <span style="font-weight:bold;">továbbképezzék magukat pszichiátriai ápolónak</span> és többen közülük a kezdetben a nyugat-magyarországi régióban nyíló, Dr. Steinmetz által alapított <span style="font-weight:bold;">rehabilitációs intézményekben kezdtek el dolgozni</span>. Dr. Steinmetz összesen hét intézetet nyitott országszerte, melyek működtetésére a kormányzat, tekintettel a módszer társadalmi szinten kvantitatívan kimutatható pozitív hatására, <span style="font-weight:bold;">minden évben növekvő összeget határolt el az egészségügyi költségvetésből.</span><br><br>
+A legutoljára megnyíló, <span style="font-weight:bold;">hetedik ifjúsági intézet, Celldömölkön 2028-ban kezdte meg működését</span>. Ebben az évben kapott megbízást Dr. Steinmetz arra, hogy létrehozzon egy, főképp <span style="font-weight:bold;">fiatal felnőtteket fogadó intézetet Budapesten, a Nemzeti Rehabilitációs és Integrációs Központot</span>, melyben kiemelt politikai jelentőségű tevékenység vette kezdetét 2029-ben. A módszert Dr. Steinmetz a fővárosi intézetben kisebb, de lényegi módosításokkal alkalmazta, tekintettel arra, hogy az újfajta populáció kiindulási pozíciója és lehetőségei eltértek a korábbi beteganyagétól. Az első években kontroll-csoportos kutatás segítségével vizsgálta az apróbb változtatások hatását, majd <span style="font-weight:bold;">2032-ben</span> történt meg <span style="font-weight:bold;">a módszer publikált, statisztikailag alátámasztott</span> véglegesítése. A nemzetközileg elismert módszer kidolgozásáért a mester ugyanebben az évben kapta meg a <span style="font-weight:bold;">Kárpát-medencei Hazafi díjat és 2033-ban Akadémiai Aranyéremmel tüntették ki.</span><br><br>
+Dr. Steinmetznél röviddel az intézet megnyitása után tüdőrákot diagnosztizáltak. Betegségét, amíg lehetett, titkolta az intézet dolgozói és bentlakói előtt, <span style="font-weight:bold;">2033 novemberében hunyt el</span>. 2034-ben fogja az Emberi Erőforrások Minisztériumának Kuratóriuma először odaítélni a <span style="font-weight:bold;">Dr. Steinmetz Imre Díjat</span>, melyben olyan személyek részesülhetnek, akik <span style="font-weight:bold;">az oktatás és nevelés területén kiemelkedő, a nemzet fejlődését szolgáló, rendkívüli és áldozatos munkát végeznek.</span>
+</p>
+    </div><img class="img" id="methods" src="https://i.imgur.com/hr27VWY.jpeg"><div class="back">
+  <h2>Módszereink</h2>
+    <h3>Terápiás célok és a módszer áttekintése</h3>
+    <p>Az intézetben zajló terápia célja, hogy <span style="font-weight:bold;">felkészítse a bentlakókat a stabil családi környezet</span> kialakítására, segítse őket a <span style="font-weight:bold;">harmonikus közösségi működéshez</span> szükséges szerepek elsajátításában és eszközöket adjon nekik ahhoz, hogy megtalálják helyüket társadalmunkban és konstruktívan járuljanak hozzá annak működéséhez. Ehhez az egyik <span style="font-weight:bold;">legfontosabb módszertani eszköz a viselkedéses és gondolkodási sémák kulturális sajátosságainkhoz alkalmazkodó átalakítása</span>, azoknak a <span style="font-weight:bold;">központi fogalmaknak, értékeknek a megismertetése és elsajátításuk elősegítése, melyek köré nemzeti közösségünk működése szerveződik</span>, valamint annak tudatosítása, hogy <span style="font-weight:bold;">az egyén döntései milyen módon hatnak vissza ennek a közösségnek működésére</span>. A képzés segít, hogy a bentlakó megtanulja helyesen értelmezni a személyközi kommunikációs helyzeteket és tágabb környezete történéseit, és a helyes értelmezés alapján saját maga és a társadalom számára előremutató döntéseket hozzon.</p>
+    <h3>Főbb terápiás irányok és kiegészítő módszerek</h3>
+    <p>A sikeres terápia kulcsfontosságú eleme, hogy nemcsak a pszichét, de a fizikai <span style="font-weight:bold;">testet is újjáépíti</span> – a folyamatnak része az intenzív sporttevékenység, melynek fegyelmezettsége, kontrolláltsága pozitívan hat vissza a mentális folyamatokra, a <span style="font-weight:bold;">gondolatokat rendezetté, letisztulttá teszi, fejleszti az egyén indulatkezelési képességét</span>. A mentális és testi újjáépülés <span style="font-weight:bold;">párhuzamosan történik a változatos művészetterápiás folyamatokkal</span>. A bentlakók személyes fejlődésének kulcsfontosságú részét képezik r<span style="font-weight:bold;">ajz- és képzőművészeti terápiás</span> foglalkozások, az intézet módszerében kiemelt helyet foglal el a <span style="font-weight:bold;">drámaterápia, és a zene-, , továbbá táncterápia</span>. Ezeknek a csoportos foglalkozásoknak a keretein belül a bentlakók megtanulják a <span style="font-weight:bold;">közösségi értékeket szem előtt tartva kifejezni érzéseiket, gondolataikat</span> és azt, hogy oly módon járuljanak hozzá a közösségi léthez, ami előremozdítja, építi annak működését.</p>
+    <h3>Terápiás keretek</h3>
+  <p>A terápia <span style="font-weight:bold;">egész napos elfoglaltságot</span> jelent, a délelőtti foglalkozásokon a sportterápiát követően a bentlakók a <span style="font-weight:bold;">nyelvi, történelmi, etikai modul</span> keretében különböző szintű csoportokban tanulnak, délután kerül sor a <span style="font-weight:bold;">művészetterápiás foglalkozásokra</span> és azokra a kiscsoportos foglalkozásokra, melyek keretében helyzetgyakorlatokon és ezek közös kiértékelésén keresztül történik meg a viselkedési sémák felülírása, korrigálása. A bentlakók délelőtti és délutáni foglalkozásokon is <span style="font-weight:bold;">folyamatosan visszajelzéseket</span> kapnak a foglakozásvezetőktől a viselkedésükkel, kommunikációjuk hangvételével, tartalmával kapcsolatban, ez a folyamatos visszacsatolás, korrekció központi eleme az intézet módszerének. Heti rendszerességű az <span style="font-weight:bold;">orvosi és pszichés állapotfelmérés</span>, a bentlakók <span style="font-weight:bold;">előrehaladásának kiscsoportokban történő  kiértékelése és kívánatos fejlődési irányuk meghatározása.</span><br><br>
+    A hétvégi <span style="font-weight:bold;">szabadon választható tevékenységek</span>, vezetett, közös beszélgetések ápolókkal, meghívott vendégekkel segítik a bentlakókat abban, hogy modelleket találjanak, és gyakorolják azt a pozitív hangvételű, konstruktív kommunikációt, ami áthatja az egész intézet működését.
+</p>
+    </div><img class="img" id="log" src="https://i.imgur.com/ZKTcoI5.jpeg"><div class="back">
+  <h2>Belépés menete és támogatások igénybevétele</h2>
+    <p>A SIRIK egyre bővülő kapacitással és változatlan szakmai színvonalú képzéssel várja az önként jelentkezőket. Kérjük, <span style="font-weight:bold;">jelentkezés előtt tekintsék át az alábbi információkat</span>, illetve további kérdések esetén állunk szíves rendelkezésükre a <span style="font-weight:bold;">SIRIK-fon ingyenesen igénybe vehető, élőhangos tájékoztatási rendszerén keresztül.</span></p>
+    <h3>Belépés menete</h3>
+    <p>Az intézetbe történő felvétel folyamatos.<br><br>
+A képzés megkezdése és elvégzése <span style="font-weight:bold;">önkéntes, a képzés folyamata</span> a bentlakó kérésére az első félév folyamán bármikor <span style="font-weight:bold;">költségmentesen megszakítható.</span><br><br>
+A folyamatos túljelentkezés miatt kérjük, <span style="font-weight:bold;">belépési szándékukat</span> a kívánt belépési dátum megjelölésével előre jelezzék az <span style="font-weight:bold;">Ügyfélkapun</span> leadott, illetve a <span style="font-weight:bold;">felvetel@sirik.hu</span> e-mail címre is megküldött <span style="font-weight:bold;">2031/728. sz. EÜ Nyomtatványon.</span><br><br>
+A Nyomtatványon megjelölt életkörülmények, jövedelem, lakhely, családi állapot figyelembevételével a <span style="font-weight:bold;">jelentkezők behívása folyamatosan történik</span>. A munkáltatóval történő egyeztetésre a belépési szándék megerősítése után kerül sor. Kérjük, a nyomtatványon az átfogó <span style="font-weight:bold;">adatszolgáltatási platformra regisztrált személyazonosító okmány</span> (személyi igazolvány vagy jogosítvány) számát adják meg, mivel a felvétel előfeltétele a biometrikus adatok, illetve a korábbi határátlépések leellenőrzése.
+</p>
+    </div><img class="img" id="sponsor" src="https://i.imgur.com/HpEDsno.jpeg"><div class="back">
+  <h2>Támogatások</h2>
+    <p>A SIRIK-ben elvégzett képzés az alábbi módon illeszkedik a <span style="font-weight:bold;">Nemzeti Támogatások Rendszeréhez</span> az 526/2028. sz. Kormányrendelet értelmében:<br><br>
+      <span style="font-weight:bold;">Családtagok felhasználható kreditei</span> a képzési folyamat megkezdésekor<br><br>
+      <span style="font-weight:bold;">Közvetlen családtagok</span> (szülők, testvérek, házastárs, egyenesági leszármazottak) által igénybe vehető összesen <span style="font-weight:bold;">7 kredit</span>, amely egy vagy két családtag számára egyaránt felhasználható a <span style="font-weight:bold;">lakástámogatási vagy munkavállalási keret</span> részeként<br><br>
+ 
+      Az intézetben elvégzett <span style="font-weight:bold;">teljes képzés és sikeres vizsga</span> letétele esetén felhasználható kreditek és jogosultságok a képzést elvégző személy vagy a közvetlen családtagok közül <span style="font-weight:bold;">egy vagy két személy számára támogatási területenként azok esetében, akik két vagy három gyermeket nevelnek:</span><br><br><br><br>
+Lakhatás<br><br>
+  </p><h6>Jogosultság <span style="font-weight:bold;">területi szektor</span> megváltoztatására</h6><br><br>
+  <h6>Jogosultság további egy <span style="font-weight:bold;">lakószoba</span> igénylésére</h6><p><br><br>
+    Munkavállalás<br><br></p><h6>
+  Jogosultság <span style="font-weight:bold;">kényelmi szektor</span> növelésére <span style="font-weight:bold;">2 szinttel</span><br><br>
+  Jogosultság a <span style="font-weight:bold;">munkaidő keret</span> csökkentésére <span style="font-weight:bold;">1 szinttel</span></h6><p><br><br>
+    Egészségügyi ellátás<br><br></p><h6>
+  Jogosultság <span style="font-weight:bold;">középszintű szolgáltatások</span> igénybevételére (mennyiben ez korábban nem volt meg)</h6><p><br><br>
+    Oktatás, gyermekfelügyelet<br><br></p><h6>
+  <span style="font-weight:bold;">Kiskorú gyermekek</span> esetén jogosultság minden gyermek <span style="font-weight:bold;">intézményszintjének növelése 2 szinttel</span><br><br>
+  <span style="font-weight:bold;">Nagykorú gyermekek</span> esetén <span style="font-weight:bold;">gyermekenként 5 kredit</span>, ami szabadon felhasználható az <span style="font-weight:bold;">intézmény- vagy szakirányválasztás</span> területén<br><br><br><br></h6><p>
+
+
+A kreditek és jogosultságok jóváírásának feltétele az <span style="font-weight:bold;">igénylőlap Ügyfélkapun keresztül</span> történő leadása a képzés megkezdését, illetve a sikeres vizsgát követő <span style="font-weight:bold;">45 napon belül</span>. A kreditek <span style="font-weight:bold;">jóváírása</span> a felülvizsgálatot és jóváhagyást követően <span style="font-weight:bold;">30 napon belül történik meg.</span><br><br>
+<span style="font-weight:bold;">Egy gyermeket nevelők, egyedülálló szülők, illetve gyermektelen nagykorúak</span> a fenti támogatásokat <span style="font-weight:bold;">nem vehetik igénybe</span>. Amennyiben a képzés lezárultát követően a képzést elvégző személy 45 napon belül a 153/2026. sz. Kormányrendelet értelmében legalább <span style="font-weight:bold;">két gyermek házasságon belüli világra hozatalát vállalja</span>, a fenti támogatások a második gyermek megfoganását <span style="font-weight:bold;">igazoló vizsgálatot követően vehetők igénybe.</span>
+</p>
+    </div><img class="img" id="RIK" src="https://i.imgur.com/w6fkNNt.jpeg"><div class="back">
+  <h2>RIK Kiadó</h2>
+  <p>Aktuálisan rendelhető kiadványaink<br><br></p><h6>
+                                       	Dr. Steinmetz Imre: A szabadság nyelve<br><br>
+                                       	Dr. Steinmetz Imre: A szociális alkalmazkodás XXI. századi formái<br><br>
+                                       	Dr. Steinmetz Imre: Moralitás és belső szabadság<br><br>
+Új korszak - a tradicionalizmus lázadása (eszzékötet, mely tartalmazza Dr. Steinmetz Imre Családi funkciók stabilitása és pszichés egyensúly c. folyóiratcikkét)<br><br>
+  Dr. Steinmetz Imre: Intézményvezetés és –fejlesztés (egyetemi tankönyv)<br><br><br><br>
+ 
+                                       	Dr. Steinmetz Imre jelenleg elérhető tanulmányai irkafűzött formátumban:<br><br>
+-  Egyén és társadalom dinamikus viszonya a tradicionális családmodell tükrében<br><br>
+- A közösségbe történő reintegráció új megközelítése – érték– és interakcióközpontú terápia<br><br>
+-  A kreativitás konstruktív és destruktív formái<br><br>
+  - Önkifejezés és társadalmi kohézió<br><br><br><br></h6><p>
+ 
+  Előkészítés alatt:<br><br></p><h6>
+Dr. Steinmetz Imréné: Belső iránytű. Kézikönyv ápolók és segédszemélyzet számára
+  </h6>
+    </div><img class="img" id="donate" src="https://i.imgur.com/48YDElM.jpeg"><div class="back">
+  <h2>Adományok</h2>
+    <p>Kedves Támogatónk!<br><br>
+Intézetünk célja, hogy <span style="font-weight:bold;">mindenkinek, aki segítséget kér, lehetőséget adjunk</span> a képzés elvégzésére és arra, hogy a közösség, a nemzet és saját jólétét szem előtt tartva megtalálja helyét az <span style="font-weight:bold;">újjáalakuló, független Magyarországon.</span><br><br>
+Köszönjük, ha támogatja Intézetünket és vállaljuk, hogy <span style="font-weight:bold;">minden hozzánk érkező támogatást a bentlakók és a képzés fejlesztésére használunk fel.</span><br><br>
+      Amennyiben <span style="font-weight:bold;">akár magánszemélyként, akár cégként</span> támogatást kíván nyújtani, kérjük, vegye fel a kapcsolatot a Titkársággal a <span style="font-weight:bold;">adomany@sirik.hu</span> e-mail címen.
+</p>
+    </div><img class="img" id="SIRIK" src="https://i.imgur.com/qzIWcrU.jpeg"><div class="back, sec">
+  <h2>SIRIK-fon</h2>
+    <p>A SIRIK-fon azért jött létre, hogy <span style="font-weight:bold;">naprakész tájékoztatást</span> adjon a <span style="font-weight:bold;">belépés menetéről</span>, illetve választ adjon bármilyen kérdésre az intézet működésével és a képzés részleteivel kapcsolatban, érthetően, <span style="font-weight:bold;">egyéni igényekre</span> reagálva.<br><br>
+Az operátorokkal történő, egyéni beszélgetésekre <span style="font-weight:bold;">minden nap 10 és 16 óra között</span> kerül sor, <span style="font-weight:bold;">45 perces időkeretben</span>. Regisztrálni a <span style="font-weight:bold;">sirikfon@sirik.hu</span> e-mail címen lehet, ahol név, életkor, jelenlegi családi állapot, foglalkozás és a feltenni kívánt <span style="font-weight:bold;">kérdések előzetes megadásával</span> foglalható időpont.
+    </p></div>
+  <footer><h4>KAPCSOLAT<br><br></h4>
+    <p class="end">
+          	Steinmetz Imre Rehabilitációs és Integrációs Központ<br>
+          	1051 Budapest, Nádor utca 15.<br>
+ 
+          	e-mail: sirik@sirik.hu<br>
+          	adószám: -<br>
+          	bankszámlaszám: -<br><br><br>
+    </p><h4>PARTNEREK <br><br></h4><p class="end">
+          	Mathias Corvinus Collegium<br>
+          	Mathias Corvinus Egyetem<br>
+          	Emberi Erőforrások Minisztériuma (EMMI)<br>
+Emberi Erőforrás Támogatáskezelő<br>
+Miniszterelnökség<br>
+Magyar Ifjúsági Értekezlet (MIÉRT)<br>
+    Polgári Magyarországért Alapítvány</p><br><br><br>
+    <h4>IMPRESSZUM<br><br></h4>
+    <p class="end">Főszerkesztő: Dr. Fehér Endre<br>
+          	Szerkesztők: SIRIK Kommunikációs Osztály</p><h5>...</h5></footer>
+</body>
+  <script>
+    document.getElementById("myDIV").style.display = "none";
+    document.getElementById("button").style.display = "none";
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  document.getElementById("lines").style.display = "block";
+  document.getElementById("button").style.display = "none";
+}
+    function myFunction2() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  document.getElementById("button").style.display = "block";
+  document.getElementById("lines").style.display = "none";
+}
+</script>
+</html>
